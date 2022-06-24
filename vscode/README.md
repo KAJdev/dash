@@ -2,7 +2,7 @@
 
 This extension adds language colorization support for the Dash language to VS Code.
 
-![IDE](https://raw.githubusercontent.com/kajdev/vscode-modulscript/main/example.png)
+![IDE](https://raw.githubusercontent.com/kajdev/dash/main/vscode/example.png)
 
 ## Using
 

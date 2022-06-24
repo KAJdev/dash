@@ -1,6 +1,6 @@
 import random
 import sys
-from interpreter import Interpreter, Memory, StandardLibrary
+from interpreter import Interpreter, StandardLibrary
 
 from sys import stderr, stdout
 

@@ -11,7 +11,7 @@ if: "if" expression block [else]
 else: "else" (if | block)
 loop: "loop" block
 event: "on" WORD block
-return: "return" [expression]
+return.1: "return" [expression]
 
 expression: (LITERAL | ESCAPED_STRING | WORD | SIGNED_NUMBER | COLOR | inverse | call | (expression [OPERATOR expression])) | "(" expression ")"
 
@@ -30,7 +30,8 @@ COLOR: ("#"|"0x")(HEXDIGIT~6)
 %import common.SIGNED_NUMBER
 %import common.WS
 %import common.WORD
-%import common.SH_COMMENT
+%import common.C_COMMENT
+%import common.CPP_COMMENT
 %import common.LETTER
 %import common.HEXDIGIT
 

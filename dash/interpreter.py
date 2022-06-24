@@ -3,6 +3,8 @@ from lark import Transformer, Tree, Token, Lark, Transformer
 from grammars import parser
 import jaro
 
+__all__ = ("Interpreter", "StdLib")
+
 class DashTrue:
    __bool__ = lambda _: True
    __str__ = __repr__ = lambda _: "true"
@@ -120,6 +122,9 @@ class Interpreter:
         ))
 
     def eval_expression(self, expression):
+        if expression is None:
+            return none
+
         expression.children = filter_children(expression.children)
 
         if len(expression.children) == 1:

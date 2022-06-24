@@ -1,6 +1,6 @@
 fn test(x) {
-    return x;
+    return;
 }
 
-something = 1;
-print(someting);
+something = test(none);
+print(something);
