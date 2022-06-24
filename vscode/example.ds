@@ -1,0 +1,5 @@
+on message {
+    if content is "!ping" {
+        send("pong");
+    }
+}

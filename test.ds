@@ -1,0 +1,6 @@
+fn test(x) {
+    return x;
+}
+
+something = 1;
+print(someting);

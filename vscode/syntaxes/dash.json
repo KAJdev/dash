@@ -1,0 +1,127 @@
+{
+	"name": "dash",
+	"scopeName": "source.dash",
+	"comment": "Dash",
+	"fileTypes": ["ds"],
+	"foldingStartMarker": "\\s*(on)",
+	"patterns": [
+		{
+		  "include": "#comments"
+		},
+		{
+		  "include": "#numbers"
+		},
+		{
+		  "include": "#variables"
+		},
+		{
+		  "include": "#strings"
+		},
+		{
+		  "include": "#keywords"
+		},
+		{
+		  "include": "#events"
+		},
+		{
+		  "include": "#types"
+		},
+		{
+		  "include": "#effects"
+		},
+		{
+		  "include": "#functions"
+		}
+	],
+	"repository": {
+		"functions": {
+			"patterns": [
+				{
+					"match": "(send|wait|delete)(?=\\()",
+					"name": "entity.name.function.dash"
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"match": "true|false|none",
+					"name": "constant.language.true.dash"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+			  {
+				"begin": "\\/\\/",
+				"end": "\\n",
+				"name": "comment.line.dash"
+			  },
+			  {
+				"begin": "\\/\\*",
+				"end": "\\*\\/",
+				"name": "comment.block.dash"
+			  }
+			]
+		},
+		"keywords": {
+		  "patterns": [
+			{
+			  "match": "\\b(on)\\b",
+			  "name": "keyword.other.on.dash"
+			},
+			{
+				"match": " is ",
+				"name": "keyword.operator.is.dash"
+			},
+			{
+				"match": " in ",
+				"name": "keyword.operator.in.dash"
+			},
+			{
+			  "match": "\\b((else )?if|else|while|loop)\\b",
+			  "name": "keyword.control.else.dash"
+			},
+			{
+			  "match": "#([A-z]|[0-9]){1,6}",
+			  "name": "constant.other.color.dash"
+			},
+			{
+				"match": "return",
+				"name": "keyword.control.return.dash"
+			}
+		  ]
+		},
+		"numbers": {
+		  "patterns": [
+			{
+			  "match": "\\b(([0-9]+)|[0-9][0-2]?(?i)(a|p)m)\\b",
+			  "name": "constant.numeric.dash"
+			}
+		  ]
+		},
+		"strings": {
+		  "patterns": [
+			{
+			  "begin": "\"",
+			  "end": "\"",
+			  "name": "string.text.dash",
+			  "patterns": [
+				{
+				  "match": "\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)",
+				  "name": "constant.character.escape.dash"
+				}
+			  ]
+			}
+		  ]
+		},
+		"variables": {
+		  "patterns": [
+			{
+			  "match": "{@[a-zA-Z0-9]+}",
+			  "name": "variable.type.option.dash"
+			}
+		  ]
+		}
+	  }
+	}

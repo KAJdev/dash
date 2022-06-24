@@ -1,0 +1,45 @@
+{
+	"name": "dash",
+	"version": "0.0.4",
+	"publisher": "kajdevcode",
+	"author": {
+		"name": "kaj"
+	},
+	"license": "MIT",
+	"description": "Dash language support for Visual Studio Code",
+	"displayName": "Dash Language Support",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kajdev/dash.git"
+	},
+	"bugs": {
+		"url": "https://github.com/kajdev/dash/issues"
+	},
+	"categories": [
+		"Programming Languages",
+		"Snippets",
+		"Linters"
+	],
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "dash",
+				"aliases": [
+					"Dash"
+				],
+                "extensions": [".ds"],
+				"configuration": "./dash.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "dash",
+				"scopeName": "source.dash",
+				"path": "./syntaxes/dash.json"
+			}
+		]
+	}
+}
