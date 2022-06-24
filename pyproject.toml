@@ -1,0 +1,28 @@
+[project]
+name = "dash"
+version = "1.0.0"
+description = "A simple, yet powerful interpreter for the Dash programming language"
+readme = "README.md"
+
+keywords = ["interrpeter", "extensible", "dash", "language"]
+
+classifiers = [
+    "Topic :: Software Development"
+]
+
+[tool.poetry]
+name = "dash"
+version = "1.0.0"
+description = "A simple, yet powerful interpreter for the Dash programming language"
+authors = ["kajdev <kaj@otter.university>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+lark = "^1.1.2"
+jaro-winkler = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["setuptools", "tomli"]
+build-backend = "setuptools.build_meta"
