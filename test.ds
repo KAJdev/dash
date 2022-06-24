@@ -1,6 +1,7 @@
-fn test(x) {
-    return;
+if true {
+    y = 1;
+
+    print(y);
 }
 
-something = test(none);
-print(something);
+print(y);

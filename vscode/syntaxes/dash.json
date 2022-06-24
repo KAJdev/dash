@@ -37,7 +37,7 @@
 		"functions": {
 			"patterns": [
 				{
-					"match": "(send|wait|delete)(?=\\()",
+					"match": "([A-z-_])+(?=\\()",
 					"name": "entity.name.function.dash"
 				}
 			]
