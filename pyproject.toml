@@ -4,7 +4,7 @@ version = "1.0.0"
 description = "A simple, yet powerful interpreter for the Dash programming language"
 readme = "README.md"
 
-keywords = ["interrpeter", "extensible", "dash", "language"]
+keywords = ["interpreter", "extensible", "dash", "language"]
 
 classifiers = [
     "Topic :: Software Development"
